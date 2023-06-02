@@ -580,48 +580,6 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.rounded-4xl {
-  border-radius: 2rem;
-}
-
-.bg-brown-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 193 172 / var(--tw-bg-opacity));
-}
-
-.bg-amber-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
-}
-
-.text-center {
-  text-align: center;
-}
-
-.font-DanaDemiBold {
-  font-family: Dana DemiBold;
-}
-
 .font-Dana {
   font-family: Dana;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-gray-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-  }
 }
