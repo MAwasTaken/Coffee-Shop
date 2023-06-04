@@ -580,6 +580,26 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
+.hidden {
+  display: none;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
 .font-Dana {
   font-family: Dana;
 }
