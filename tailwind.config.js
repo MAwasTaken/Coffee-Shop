@@ -1,3 +1,4 @@
+let tightest;
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['public/**/*.{html, js}'],
@@ -25,6 +26,9 @@ module.exports = {
 				MorabbaLight: 'Morabba Light',
 				MorabbaMedium: 'Morabba Medium',
 				MorabbaBold: 'Morabba Bold'
+			},
+			letterSpacing: {
+				tightest: '-0.065em'
 			}
 		}
 	},
