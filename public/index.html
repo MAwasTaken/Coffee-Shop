@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
@@ -11,7 +11,7 @@
 		<link rel="icon" href="images/fav-icon.png" type="image/png" />
 		<title>Coffee shop</title>
 	</head>
-	<body class="font-Dana">
+	<body class="bg-gray-100 font-Dana dark:bg-zinc-800">
 		<!-- all app icons -->
 		<svg class="hidden">
 			<!-- shopping cart -->
@@ -75,17 +75,19 @@
 				/>
 			</symbol>
 		</svg>
-		<header class="mx-auto flex h-24 w-[90%] items-center rounded-3xl bg-black/50 py-5 pl-4 pr-10">
-			<div class="flex w-full justify-between">
+		<header
+			class="fixed left-0 right-0 top-9 mx-auto flex h-24 w-[90%] items-center rounded-3xl bg-black/50 px-10 py-5"
+		>
+			<div class="flex w-full items-center justify-between">
 				<!-- logo and menu-->
-				<nav class="flex gap-x-9">
+				<nav class="flex items-center gap-x-9">
 					<!-- logo -->
 					<div>
 						<img src="images/app-logo.png" alt="Golden Coffee" />
 					</div>
 					<!-- menu -->
-					<ul class="flex gap-x-9">
-						<li>
+					<ul class="flex gap-x-9 text-xl text-gray-300">
+						<li class="font-DanaMedium text-orange-200">
 							<a href="#">صفحه اصلی</a>
 						</li>
 						<!-- has sub -->
