@@ -45,5 +45,7 @@ body {
 
 	body {
 		@apply font-Dana;
+		background-image: url('../images/headerBgDesktop.png');
+		background-repeat: no-repeat;
 	}
 }
