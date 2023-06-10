@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
@@ -10,6 +10,14 @@
 		<link rel="stylesheet" href="./styles/styles.css" />
 		<link rel="icon" href="images/fav-icon.png" type="image/png" />
 		<title>Coffee shop</title>
+		<script type="text/javascript">
+			if (
+				localStorage.theme === 'dark' ||
+				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			)
+				document.documentElement.classList.add('dark');
+			else document.documentElement.classList.remove('dark');
+		</script>
 	</head>
 	<body class="bg-gray-100 font-Dana dark:bg-zinc-800">
 		<!-- all app icons -->
@@ -97,7 +105,7 @@
 							<a href="#" class="transition-colors group-hover:text-orange-300">فروشگاه</a>
 							<!-- sub menu -->
 							<div
-								class="invisible absolute top-full w-52 space-y-4 rounded-2xl border-t-[3px] border-t-orange-300 bg-white p-6 text-base tracking-normal text-zinc-700 opacity-0 shadow-normal transition-all group-hover:visible group-hover:opacity-100 child:block child:transition-colors child-hover:text-orange-300 dark:bg-zinc-700 dark:text-white"
+								class="invisible absolute top-full w-52 space-y-4 rounded-2xl border-t-[3px] border-t-orange-300 bg-white p-6 text-base tracking-normal text-zinc-700 opacity-0 shadow-normal transition-all group-hover:visible group-hover:opacity-100 child:inline-block child:transition-colors child-hover:text-orange-300 dark:bg-zinc-700 dark:text-white"
 							>
 								<a href="#">قهوه ویژه</a>
 								<a href="#">ویژه در سطح جهانی</a>
@@ -127,14 +135,19 @@
 					<div class="flex items-center gap-x-5">
 						<!-- cart -->
 						<div>
-							<svg class="h-8 w-8">
-								<use xlink:href="#shopping-cart"></use>
-							</svg>
+							<!-- cart icon hover -->
+							<div class="py-3">
+								<svg class="h-8 w-8">
+									<use href="#shopping-cart"></use>
+								</svg>
+							</div>
+							<!-- cart box -->
+							<div></div>
 						</div>
 						<!-- theme switch btn -->
 						<div>
 							<svg class="h-8 w-8">
-								<use xlink:href="#moon"></use>
+								<use href="#moon"></use>
 							</svg>
 						</div>
 					</div>
@@ -143,7 +156,7 @@
 					<!-- login link -->
 					<a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
 						<svg class="h-8 w-8 rotate-180">
-							<use xlink:href="#arrow-left-on-rectangle"></use>
+							<use href="#arrow-left-on-rectangle"></use>
 						</svg>
 						ورود | ثبت‌نام
 					</a>
