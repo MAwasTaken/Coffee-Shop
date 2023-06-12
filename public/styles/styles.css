@@ -670,6 +670,18 @@ body {
   height: 100%;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .max-h-60 {
   max-height: 15rem;
 }
@@ -732,6 +744,14 @@ body {
 
 .w-\[95\%\] {
   width: 95%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .shrink-0 {
@@ -902,6 +922,11 @@ body {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-1 {
@@ -1110,6 +1135,10 @@ body {
   .md\:flex {
     display: flex;
   }
+
+  .md\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1119,6 +1148,10 @@ body {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-\[90\%\] {
