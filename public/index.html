@@ -375,7 +375,7 @@
 							</div>
 						</div>
 						<!-- theme switch btn -->
-						<div class="cursor-pointer" id="toggle-theme">
+						<div class="toggle-theme cursor-pointer">
 							<svg class="inline-block h-8 w-8 dark:hidden">
 								<use href="#moon"></use>
 							</svg>
@@ -417,27 +417,29 @@
 						</svg>
 					</div>
 					<div
-						class="mt-6 space-y-6 border-t border-t-gray-100 px-2.5 pt-8 text-orange-300 dark:border-t-white/10"
+						class="mt-6 flex flex-col items-start gap-y-6 border-t border-t-gray-100 px-2.5 pt-8 text-orange-300 dark:border-t-white/10"
 					>
-						<a href="#" class="flex items-center gap-x-2">
+						<a href="#" class="inline-flex items-center gap-x-2">
 							<svg class="h-5 w-5 rotate-180">
 								<use href="#arrow-left-on-rectangle"></use>
 							</svg>
 							ورود | ثبت‌نام
 						</a>
-						<div class="flex items-center gap-x-2 dark:hidden">
-							<svg class="h-5 w-5">
-								<use href="#moon"></use>
-							</svg>
-							<span> تم تیره </span>
+						<div class="toggle-theme inline-block">
+							<div class="flex items-center gap-x-2 dark:hidden">
+								<svg class="h-5 w-5">
+									<use href="#moon"></use>
+								</svg>
+								<span> تم تیره </span>
+							</div>
+							<div class="hidden items-center dark:flex">
+								<svg class="h-5 w-5">
+									<use href="#sun"></use>
+								</svg>
+								<span> تم روشن </span>
+							</div>
 						</div>
-						<div class="hidden items-center dark:flex">
-							<svg class="h-5 w-5">
-								<use href="#sun"></use>
-							</svg>
-							<span> تم روشن </span>
-						</div>
-						<a href="#" class="flex items-center gap-x-2">
+						<a href="#" class="inline-flex items-center gap-x-2">
 							<svg class="h-5 w-5">
 								<use href="#shopping-cart"></use>
 							</svg>
