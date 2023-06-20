@@ -50,9 +50,19 @@ body {
 	}
 }
 
-@layer components {
+@layer component {
+	.submenu {
+		@apply mt-3 hidden flex-col gap-y-3 pr-7 text-sm text-zinc-600 dark:text-white;
+	}
+
+	.submenu--open {
+		display: flex !important;
+	}
+
 	.submenu__item--active {
-		@apply relative pr-2.5 text-orange-300;
+		position: relative;
+		padding-right: 10px;
+		color: #fdba74 !important;
 	}
 
 	.submenu__item--active::after {
@@ -67,5 +77,13 @@ body {
 		bottom: 0;
 		margin: auto;
 		background-color: #fdba74;
+	}
+
+	.overlay {
+		@apply invisible fixed inset-0 z-10 h-full w-full bg-black/40 opacity-0 transition-all md:hidden;
+	}
+
+	.overlay--visible {
+		@apply visible opacity-100;
 	}
 }
