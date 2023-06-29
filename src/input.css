@@ -42,12 +42,6 @@ body {
 		src: local('Morabba Bold'), url('../fonts/Morabba/woff2/Morabba-Bold.woff2') format('woff2');
 		font-display: swap;
 	}
-
-	body {
-		@apply font-Dana;
-		background-image: url('../images/headerBgDesktop.webp');
-		background-repeat: no-repeat;
-	}
 }
 
 @layer component {

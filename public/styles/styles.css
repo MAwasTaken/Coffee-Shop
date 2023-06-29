@@ -476,12 +476,6 @@ video {
   font-display: swap;
 }
 
-body {
-  font-family: Dana;
-  background-image: url('../images/headerBgDesktop.webp');
-  background-repeat: no-repeat;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -675,6 +669,19 @@ body {
   margin-right: auto;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -708,6 +715,10 @@ body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -772,6 +783,10 @@ body {
 
 .h-full {
   height: 100%;
+}
+
+.h-px {
+  height: 1px;
 }
 
 .max-h-\[320px\] {
@@ -846,6 +861,10 @@ body {
   width: 1px;
 }
 
+.max-w-\[201px\] {
+  max-width: 201px;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -873,6 +892,10 @@ body {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1027,6 +1050,11 @@ body {
   background-color: rgb(254 215 170 / 0.2);
 }
 
+.bg-orange-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+}
+
 .bg-teal-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(13 148 136 / var(--tw-bg-opacity));
@@ -1122,6 +1150,19 @@ body {
 
 .font-DanaMedium {
   font-family: Dana Medium;
+}
+
+.font-MorabbaBold {
+  font-family: Morabba Bold;
+}
+
+.font-MorabbaLight {
+  font-family: Morabba Light;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-base {
@@ -1416,12 +1457,52 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-0 {
+    height: 0px;
+  }
+
+  .md\:h-0\.5 {
+    height: 0.125rem;
+  }
+
+  .md\:min-h-screen {
+    min-height: 100vh;
+  }
+
+  .md\:max-w-\[460px\] {
+    max-width: 460px;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
