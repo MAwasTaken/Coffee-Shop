@@ -42,7 +42,8 @@ module.exports = {
 			},
 			backgroundImage: {
 				'home-mobile': 'url(../images/headerBgMobile.webp)',
-				'home-desktop': 'url(../images/headerBgDesktop.webp)'
+				'home-desktop': 'url(../images/headerBgDesktop.webp)',
+				'products-bg': 'url(../images/products-bg.png)'
 			}
 		}
 	},

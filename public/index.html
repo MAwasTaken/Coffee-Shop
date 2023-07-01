@@ -308,6 +308,19 @@
 			>
 				<path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" />
 			</symbol>
+			<!-- chevron mini -->
+			<symbol
+				id="chevron-mini"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 20 20"
+				fill="currentColor"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+					clip-rule="evenodd"
+				/>
+			</symbol>
 		</svg>
 		<!-- App Header -->
 		<header
@@ -766,10 +779,13 @@
 					class="absolute bottom-0 left-0 right-0 mx-auto hidden h-[30px] w-[30px] translate-y-2/4 items-center justify-center rounded-full border-2 border-orange-300 md:flex"
 				>
 					<svg class="flex h-4 w-4 items-center justify-center text-zinc-700 dark:text-white">
-						<use href="#chevron-down"></use>
+						<use href="#chevron-mini"></use>
 					</svg>
 				</div>
 			</section>
+			<section
+				class="products hidden bg-products-bg bg-cover bg-no-repeat opacity-[65%] dark:bg-products-bg dark:opacity-100 lg:block"
+			></section>
 		</main>
 		<script src="scripts/app.js"></script>
 	</body>
