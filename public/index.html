@@ -308,7 +308,7 @@
 			>
 				<path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" />
 			</symbol>
-			<!-- chevron mini -->
+			<!-- chevron down mini -->
 			<symbol
 				id="chevron-mini"
 				xmlns="http://www.w3.org/2000/svg"
@@ -318,6 +318,19 @@
 				<path
 					fill-rule="evenodd"
 					d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+					clip-rule="evenodd"
+				/>
+			</symbol>
+			<!-- chevron left mini -->
+			<symbol
+				id="chevron-left-mini"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 20 20"
+				fill="currentColor"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
 					clip-rule="evenodd"
 				/>
 			</symbol>
@@ -784,8 +797,35 @@
 				</div>
 			</section>
 			<section
-				class="products hidden bg-products-bg bg-cover bg-no-repeat opacity-[65%] dark:bg-products-bg dark:opacity-100 lg:block"
-			></section>
+				class="h-[900px] bg-gray-100 bg-cover bg-no-repeat pt-48 dark:bg-zinc-800 lg:bg-products-bg dark:lg:bg-products-bg"
+			>
+				<div class="container">
+					<div class="flex items-end justify-between">
+						<div>
+							<h3 class="font-MorabbaMedium text-2xl text-zinc-700 dark:text-white md:text-5xl">
+								جدیدترین محصولات
+							</h3>
+							<span
+								class="mt-0.5 inline-block font-MorabbaLight text-lg text-zinc-700 dark:text-white md:mt-1.5 md:text-3xl"
+							>
+								فرآوری شده از دانه قهوه
+							</span>
+						</div>
+						<div>
+							<a
+								href="#"
+								class="flex h-10 items-center rounded-md pl-1 pr-3 text-base tracking-tightest text-orange-300 transition-colors md:gap-x-1 md:text-xl md:hover:bg-orange-300/20"
+							>
+								<span class="hidden md:inline-block"> مشاهده همه محصولات </span>
+								<span class="inline-block md:hidden">مشاهده همه</span>
+								<svg class="h-5 w-5">
+									<use href="#chevron-left-mini"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<script src="scripts/app.js"></script>
 	</body>
