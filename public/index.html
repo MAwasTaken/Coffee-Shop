@@ -310,7 +310,7 @@
 			</symbol>
 			<!-- chevron down mini -->
 			<symbol
-				id="chevron-mini"
+				id="chevron-down-mini"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 20 20"
 				fill="currentColor"
@@ -332,6 +332,17 @@
 					fill-rule="evenodd"
 					d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
 					clip-rule="evenodd"
+				/>
+			</symbol>
+			<!-- x-mark min-->
+			<symbol
+				id="x-mark-mini"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 20 20"
+				fill="currentColor"
+			>
+				<path
+					d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
 				/>
 			</symbol>
 		</svg>
@@ -405,8 +416,8 @@
 									<span class="text-gray-300">1 مورد</span>
 									<a href="#" class="flex items-center text-orange-300">
 										مشاهده سبد خرید
-										<svg class="h-4 w-4">
-											<use href="#chevron-left"></use>
+										<svg class="h-5 w-5">
+											<use href="#chevron-left-mini"></use>
 										</svg>
 									</a>
 								</div>
@@ -582,7 +593,7 @@
 								</a>
 								<span class="submenu-open-btn">
 									<svg class="h-4 w-4">
-										<use href="#chevron-down"></use>
+										<use href="#chevron-down-mini"></use>
 									</svg>
 								</span>
 							</div>
@@ -687,7 +698,7 @@
 				>
 					<div class="cart-close-btn">
 						<svg class="h-5 w-5 text-zinc-600 dark:text-white">
-							<use href="#x-mark"></use>
+							<use href="#x-mark-mini"></use>
 						</svg>
 					</div>
 					<span class="font-DanaMedium text-zinc-700 dark:text-white">سبد خرید</span>
@@ -792,15 +803,15 @@
 					class="absolute bottom-0 left-0 right-0 mx-auto hidden h-[30px] w-[30px] translate-y-2/4 items-center justify-center rounded-full border-2 border-orange-300 md:flex"
 				>
 					<svg class="flex h-4 w-4 items-center justify-center text-zinc-700 dark:text-white">
-						<use href="#chevron-mini"></use>
+						<use href="#chevron-down-mini"></use>
 					</svg>
 				</div>
 			</section>
 			<section
-				class="h-[900px] bg-gray-100 bg-cover bg-no-repeat pt-48 dark:bg-zinc-800 lg:bg-products-bg dark:lg:bg-products-bg"
+				class="h-[900px] bg-gray-100 bg-cover bg-no-repeat pt-8 dark:bg-zinc-800 md:pt-24 lg:bg-products-bg lg:pt-48 dark:lg:bg-products-bg"
 			>
 				<div class="container">
-					<div class="flex items-end justify-between">
+					<div class="mb-5 flex items-end justify-between md:mb-12">
 						<div>
 							<h3 class="font-MorabbaMedium text-2xl text-zinc-700 dark:text-white md:text-5xl">
 								جدیدترین محصولات
