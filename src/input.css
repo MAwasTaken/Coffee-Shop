@@ -92,6 +92,11 @@ body {
 			url('../images/categories/category-right.jpg');
 		background-size: cover;
 	}
+
+	.swiper-button-next-custom,
+	.swiper-button-prev-custom {
+		@apply flex-center h-9 w-9 cursor-pointer rounded-full bg-white text-zinc-700 shadow-normal transition-all hover:bg-gray-300 dark:bg-zinc-700 dark:text-white dark:hover:bg-white dark:hover:text-zinc-700 md:h-10 md:w-10;
+	}
 }
 
 @layer utilities {
