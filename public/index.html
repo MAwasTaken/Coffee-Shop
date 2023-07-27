@@ -1482,7 +1482,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="best-selling md:mb-20 mb-9">
+			<section class="best-selling mb-9 md:mb-20">
 				<div class="container">
 					<!-- section head -->
 					<div class="mb-5 flex items-end justify-between md:mb-12">
@@ -1497,16 +1497,12 @@
 							</span>
 						</div>
 						<div class="flex gap-x-3 md:gap-x-[18px]">
-							<div
-								class="swiper-button-prev-custom"
-							>
+							<div class="swiper-button-prev-custom">
 								<svg class="h-5 w-5 rotate-180 md:h-[26px] md:w-[26px]">
 									<use href="#chevron-left-mini"></use>
 								</svg>
 							</div>
-							<div
-								class="swiper-button-next-custom"
-							>
+							<div class="swiper-button-next-custom">
 								<svg class="h-5 w-5 md:h-[26px] md:w-[26px]">
 									<use href="#chevron-left-mini"></use>
 								</svg>
@@ -1805,7 +1801,7 @@
 										/>
 										<span
 											class="absolute right-1.5 top-1.5 block h-5 rounded-full bg-orange-300 px-2.5 font-DanaDemiBold text-xs/[24px] text-white dark:text-zinc-700 md:h-[30px] md:px-3.5 md:text-base/[34px]"
-										>12%</span
+											>12%</span
 										>
 									</div>
 									<h5
@@ -1822,7 +1818,7 @@
 											<span class="text-xs text-gray-400 md:text-xl">175,000</span>
 											<span
 												class="hidden text-xs tracking-tighter text-gray-400 md:text-sm lg:inline"
-											>تومان
+												>تومان
 											</span>
 										</div>
 									</div>
@@ -1874,7 +1870,7 @@
 										/>
 										<span
 											class="absolute right-1.5 top-1.5 block h-5 rounded-full bg-orange-300 px-2.5 font-DanaDemiBold text-xs/[24px] text-white dark:text-zinc-700 md:h-[30px] md:px-3.5 md:text-base/[34px]"
-										>12%</span
+											>12%</span
 										>
 									</div>
 									<h5
@@ -1891,7 +1887,7 @@
 											<span class="text-xs text-gray-400 md:text-xl">175,000</span>
 											<span
 												class="hidden text-xs tracking-tighter text-gray-400 md:text-sm lg:inline"
-											>تومان
+												>تومان
 											</span>
 										</div>
 									</div>
@@ -1943,7 +1939,7 @@
 										/>
 										<span
 											class="absolute right-1.5 top-1.5 block h-5 rounded-full bg-orange-300 px-2.5 font-DanaDemiBold text-xs/[24px] text-white dark:text-zinc-700 md:h-[30px] md:px-3.5 md:text-base/[34px]"
-										>12%</span
+											>12%</span
 										>
 									</div>
 									<h5
@@ -1960,7 +1956,7 @@
 											<span class="text-xs text-gray-400 md:text-xl">175,000</span>
 											<span
 												class="hidden text-xs tracking-tighter text-gray-400 md:text-sm lg:inline"
-											>تومان
+												>تومان
 											</span>
 										</div>
 									</div>
@@ -2012,7 +2008,7 @@
 										/>
 										<span
 											class="absolute right-1.5 top-1.5 block h-5 rounded-full bg-orange-300 px-2.5 font-DanaDemiBold text-xs/[24px] text-white dark:text-zinc-700 md:h-[30px] md:px-3.5 md:text-base/[34px]"
-										>12%</span
+											>12%</span
 										>
 									</div>
 									<h5
@@ -2029,7 +2025,7 @@
 											<span class="text-xs text-gray-400 md:text-xl">175,000</span>
 											<span
 												class="hidden text-xs tracking-tighter text-gray-400 md:text-sm lg:inline"
-											>تومان
+												>تومان
 											</span>
 										</div>
 									</div>
@@ -2074,31 +2070,50 @@
 					</div>
 				</div>
 			</section>
+			<section class="coffee-club mb-8 md:mb-20">
+				<div class="container">
+					<div
+						class="flex h-36 items-center rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 px-3 text-white md:px-11"
+					>
+						<div class="flex items-center gap-x-3 md:gap-x-6">
+							<img class="h-[87px] md:h-[110px]" src="images/club/diamond.png" alt="coffee club" />
+							<div></div>
+						</div>
+						<div>
+							<h4 class="mb-2 font-MorabbaBold text-2xl md:text-5xl">کافی کلاب</h4>
+							<p class="font-MorabbaLight text-2xl md:text-lg">
+								میدونستی میتونی با امتیازهات قهوه بگیری؟
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<script src="scripts/app.js"></script>
-		<script src="scripts/swiper-bundle.min.js"></script>
-		<script>
-			const swiper = new Swiper('.swiper', {
-				slidesPerView: 2,
-				spaceBetween: 14,
-				navigation: {
-					nextEl: '.swiper-button-next-custom',
-					prevEl: '.swiper-button-prev-custom',
+	</body>
+	<script src="scripts/app.js"></script>
+	<script src="scripts/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+			slidesPerView: 2,
+			spaceBetween: 14,
+			navigation: {
+				nextEl: '.swiper-button-next-custom',
+				prevEl: '.swiper-button-prev-custom'
+			},
+			breakpoints: {
+				640: {
+					slidesPerView: 3,
+					spaceBetween: 14
 				},
-				breakpoints: {
-					640: {
-						slidesPerView: 3,
-						spaceBetween: 14,
-					},
-					768: {
-						slidesPerView: 3,
-						spaceBetween: 20,
-					},
-					1024: {
-						slidesPerView: 4,
-						spaceBetween: 20,
-					}
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 20
+				},
+				1024: {
+					slidesPerView: 4,
+					spaceBetween: 20
 				}
-			});
-		</script>
+			}
+		});
+	</script>
 </html>
