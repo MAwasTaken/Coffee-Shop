@@ -806,6 +806,10 @@ video {
   margin-top: auto;
 }
 
+.ml-\[12px\] {
+  margin-left: 12px;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -2435,6 +2439,14 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:ml-\[18px\] {
+    margin-left: 18px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:inline {
     display: inline;
   }
@@ -2495,6 +2507,15 @@ body {
 
   .lg\:pt-48 {
     padding-top: 12rem;
+  }
+
+  .lg\:font-DanaDemiBold {
+    font-family: Dana DemiBold;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   :is(.dark .dark\:lg\:bg-products-bg) {
