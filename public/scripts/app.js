@@ -53,7 +53,6 @@ cartOpenBtn.addEventListener('click', () => {
 });
 
 navCloseBtn.addEventListener('click', () => {
-	console.log('click');
 	closeNav();
 });
 cartCloseBtn.addEventListener('click', closeCart);

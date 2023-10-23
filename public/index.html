@@ -701,7 +701,7 @@
 			<div class="nav-icon">
 				<!-- nav -->
 				<div
-					class="nav fixed -right-64 top-0 z-20 min-h-screen w-64 overflow-y-scroll bg-white px-4 pt-3 transition-all dark:bg-zinc-700"
+					class="nav fixed -right-64 bottom-0 top-0 z-20 w-64 overflow-y-scroll bg-white px-4 pt-3 transition-all dark:bg-zinc-700"
 				>
 					<!-- nav header -->
 					<div
@@ -840,7 +840,7 @@
 			</div>
 			<!-- cart -->
 			<div
-				class="cart fixed -left-64 top-0 z-20 flex min-h-screen w-64 flex-col overflow-y-scroll bg-white px-4 pt-5 transition-all dark:bg-zinc-700"
+				class="cart fixed -left-64 bottom-0 top-0 z-20 flex w-64 flex-col overflow-y-scroll bg-white px-4 pt-5 transition-all dark:bg-zinc-700"
 			>
 				<!-- cart header -->
 				<div
@@ -2886,136 +2886,154 @@
 					<use href="#chevron-down-mini"></use>
 				</svg>
 			</div>
-			<div
-				class="mx-auto flex flex-wrap justify-between px-4 text-gray-300 sm:w-[94%] md:px-0 lg:flex-nowrap"
-			>
-				<div>
-					<div class="mb-6 flex gap-x-5 md:mb-4.5">
-						<svg class="h-[54px] w-[57px]">
-							<use href="#logo"></use>
-						</svg>
-						<svg class="h-[54px] w-[138px]">
-							<use href="#logo-type"></use>
-						</svg>
-					</div>
-					<p class="text-lg md:text-xl/[48px] xl:max-w-[606px]">
-						ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی
-						برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که
-						نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق
-						می‌کوشیم.
-					</p>
-				</div>
-				<div class="mt-10 md:mt-[26px]">
-					<h4 class="mb-6 font-DanaDemiBold text-2xl text-white md:mb-7">دسترسی سریع</h4>
-					<div class="grid grid-cols-2 flex-wrap gap-x-10 gap-y-2.5 md:gap-x-16 md:gap-y-5">
-						<a
-							class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
-							href="#"
-						>
-							<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
-							حریم خصوصی
-						</a>
-						<a
-							class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
-							href="#"
-						>
-							<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
-							عودت کالا
-						</a>
-						<a
-							class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
-							href="#"
-						>
-							<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
-							شرایط استفاده
-						</a>
-						<a
-							class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
-							href="#"
-						>
-							<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
-							ثبت سفارش
-						</a>
-						<a
-							class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
-							href="#"
-						>
-							<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
-							پرسش های متداول
-						</a>
-						<a
-							class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
-							href="#"
-						>
-							<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
-							فرصت های شغلی
-						</a>
-						<a
-							class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
-							href="#"
-						>
-							<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
-							ضمانت نامه ها
-						</a>
-						<a
-							class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
-							href="#"
-						>
-							<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
-							ارتباط با ما
-						</a>
-					</div>
-				</div>
-				<div class="mt-10 md:mt-[26px]">
-					<h4 class="mb-6 font-DanaDemiBold text-2xl text-white md:mb-7">در تماس باشیم</h4>
+			<div class="mx-auto px-4 text-gray-300 sm:w-[94%] md:px-0 lg:flex-nowrap">
+				<div class="flex flex-wrap justify-between">
 					<div>
-						<div class="md:text-xl">
-							<span class="mb-4 flex items-center gap-x-2 text-xl md:mb-5 md:gap-x-3">
-								<svg class="h-5 w-5 shrink-0 md:h-6 md:w-6">
-									<use href="#map-pin"></use>
-								</svg>
-								بلوار میرداماد، خیابان البرز، کوچه قبادیان شرقی، پلاک ۳۳
-							</span>
-							<div class="mb-6 flex flex-wrap gap-x-5 gap-y-4 font-DanaMedium md:mb-10">
-								<a
-									href="mailto:info@Coffee.com"
-									class="flex items-center gap-x-2 text-orange-300 md:gap-x-3"
-								>
-									<svg class="h-5 w-5 md:h-6 md:w-6">
-										<use href="#envelope"></use>
+						<div class="mb-6 flex gap-x-5 md:mb-4.5">
+							<svg class="h-[54px] w-[57px]">
+								<use href="#logo"></use>
+							</svg>
+							<svg class="h-[54px] w-[138px]">
+								<use href="#logo-type"></use>
+							</svg>
+						</div>
+						<p class="text-lg md:text-xl/[48px] xl:max-w-[606px]">
+							ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی
+							برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که
+							نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق
+							می‌کوشیم.
+						</p>
+					</div>
+					<div class="mt-10 md:mt-[26px]">
+						<h4 class="mb-6 font-DanaDemiBold text-2xl text-white md:mb-7">دسترسی سریع</h4>
+						<div class="grid grid-cols-2 flex-wrap gap-x-10 gap-y-2.5 md:gap-x-16 md:gap-y-5">
+							<a
+								class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
+								href="#"
+							>
+								<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
+								حریم خصوصی
+							</a>
+							<a
+								class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
+								href="#"
+							>
+								<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
+								عودت کالا
+							</a>
+							<a
+								class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
+								href="#"
+							>
+								<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
+								شرایط استفاده
+							</a>
+							<a
+								class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
+								href="#"
+							>
+								<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
+								ثبت سفارش
+							</a>
+							<a
+								class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
+								href="#"
+							>
+								<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
+								پرسش های متداول
+							</a>
+							<a
+								class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
+								href="#"
+							>
+								<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
+								فرصت های شغلی
+							</a>
+							<a
+								class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
+								href="#"
+							>
+								<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
+								ضمانت نامه ها
+							</a>
+							<a
+								class="flex items-center gap-x-2 text-base transition-colors hover:text-orange-300 md:gap-x-3 md:text-xl"
+								href="#"
+							>
+								<span class="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
+								ارتباط با ما
+							</a>
+						</div>
+					</div>
+					<div class="mt-10 md:mt-[26px]">
+						<h4 class="mb-6 font-DanaDemiBold text-2xl text-white md:mb-7">در تماس باشیم</h4>
+						<div>
+							<div class="md:text-xl">
+								<span class="mb-4 flex items-center gap-x-2 text-xl md:mb-5 md:gap-x-3">
+									<svg class="h-5 w-5 shrink-0 md:h-6 md:w-6">
+										<use href="#map-pin"></use>
 									</svg>
-									info@Coffee.com
-								</a>
-								<div class="flex items-center gap-x-2 md:gap-x-3">
-									<svg class="h-5 w-5 md:h-6 md:w-6">
-										<use href="#phone"></use>
-									</svg>
-									<span> 0902 123 6628 </span>
-									<span> 021 - 6789012 </span>
+									بلوار میرداماد، خیابان البرز، کوچه قبادیان شرقی، پلاک ۳۳
+								</span>
+								<div class="mb-6 flex flex-wrap gap-x-5 gap-y-4 font-DanaMedium md:mb-10">
+									<a
+										href="mailto:info@Coffee.com"
+										class="flex items-center gap-x-2 text-orange-300 md:gap-x-3"
+									>
+										<svg class="h-5 w-5 md:h-6 md:w-6">
+											<use href="#envelope"></use>
+										</svg>
+										info@Coffee.com
+									</a>
+									<div class="flex items-center gap-x-2 md:gap-x-3">
+										<svg class="h-5 w-5 md:h-6 md:w-6">
+											<use href="#phone"></use>
+										</svg>
+										<span class="ltr-text"> 0902 123 6628 </span>
+										<span class="ltr-text"> 021 - 6789012 </span>
+									</div>
 								</div>
-							</div>
-							<div class="ltr-text flex gap-x-1.5 font-DanaMedium md:gap-x-6 md:text-xl">
-								<a
-									href="#"
-									class="flex h-12 flex-grow items-center justify-center gap-x-2 rounded-xl border border-orange-200 bg-gradient-to-r from-orange-200 to-orange-300 text-zinc-700"
-								>
-									@golden_coffee
-									<svg class="h-[26px] w-[26px] md:h-[38px] md:w-[38px]">
-										<use href="#telegram"></use>
-									</svg>
-								</a>
-								<a
-									href="#"
-									class="flex h-12 flex-grow items-center justify-center gap-x-2 rounded-xl border border-orange-200 text-orange-200"
-								>
-									@golden_coffee
-									<svg class="h-[26px] w-[26px] md:h-[38px] md:w-[38px]">
-										<use href="#instagram"></use>
-									</svg>
-								</a>
+								<div class="ltr-text flex gap-x-1.5 font-DanaMedium md:gap-x-6 md:text-xl">
+									<a
+										href="#"
+										class="flex h-12 flex-grow items-center justify-center gap-x-2 rounded-xl border border-orange-200 bg-gradient-to-r from-orange-200 to-orange-300 text-zinc-700"
+									>
+										@golden_coffee
+										<svg class="h-[26px] w-[26px] md:h-[38px] md:w-[38px]">
+											<use href="#telegram"></use>
+										</svg>
+									</a>
+									<a
+										href="#"
+										class="flex h-12 flex-grow items-center justify-center gap-x-2 rounded-xl border border-orange-200 text-orange-200"
+									>
+										@golden_coffee
+										<svg class="h-[26px] w-[26px] md:h-[38px] md:w-[38px]">
+											<use href="#instagram"></use>
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+				<div
+					class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-t-white/10 pt-10 font-DanaMedium text-xs/5 md:mt-11 md:pt-11 md:text-base"
+				>
+					<div class="flex items-center gap-x-2.5">
+						<div class="flex-center h-[30px] w-[30px] shrink-0 rounded-full border border-white/10">
+							<div class="flex-center h-5 w-5 rounded-full border border-white/20">
+								<div
+									class="h-2.5 w-2.5 rounded-full bg-gradient-to-t from-orange-200 to-orange-300"
+								></div>
+							</div>
+						</div>
+						<p>
+							تمام حقوق این رابط کاربری متعلق به <span class="text-orange-200">سبزلرن</span> میباشد
+							و دانشجوی این دوره اجازه استفاده آن را در مصارف شخصی و تجاری ندارد.
+						</p>
+					</div>
+					<span class="ltr-text mr-auto">Copyright © 2023 Golden Coffee. All rights reserved.</span>
 				</div>
 			</div>
 		</footer>
